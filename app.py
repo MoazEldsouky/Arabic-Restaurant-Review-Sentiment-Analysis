@@ -1,12 +1,11 @@
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-import warnings 
-warnings.filterwarnings("ignore")
 
-# Load the saved model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("./trained_model")
-model = AutoModelForSequenceClassification.from_pretrained("./trained_model")
+# Load the model from the Hugging Face Model Hub
+model_name = "moazx/AraBERT-Restaurant-Sentiment"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
 # Define the device to run inference on (GPU if available, otherwise CPU)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
