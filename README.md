@@ -2,10 +2,6 @@
 
 A state-of-the-art sentiment analysis project for Arabic restaurant reviews, leveraging the power of AraBERT and modern NLP techniques. This project demonstrates end-to-end data collection, model fine-tuning, and real-time deployment for public interaction.
 
-## Project Repository
-
-- **GitHub Repo:** [Arabic-Restaurant-Review-Sentiment-Analysis](https://github.com/MoazEldsouky/Arabic-Restaurant-Review-Sentiment-Analysis)
-
 ## Project Overview
 
 - **Collected and labeled** 1,000 Arabic restaurant reviews (balanced positive/negative).
